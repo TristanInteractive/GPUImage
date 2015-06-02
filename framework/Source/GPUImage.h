@@ -43,6 +43,8 @@
 #import "GPUImageKuwaharaFilter.h"
 #import "GPUImageKuwaharaRadius3Filter.h"
 #import "GPUImageVignetteFilter.h"
+#import "GPUImageTopCornersFilter.h"
+#import "GPUImageGradientFilter.h"
 #import "GPUImageGaussianBlurFilter.h"
 #import "GPUImageGaussianBlurPositionFilter.h"
 #import "GPUImageGaussianSelectiveBlurFilter.h"
