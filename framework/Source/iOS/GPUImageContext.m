@@ -31,8 +31,6 @@ static void *openGLESContextQueueKey;
 		return nil;
     }
   
-  [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(appBackground) name:UIApplicationWillResignActiveNotification object:nil];
-
 	openGLESContextQueueKey = &openGLESContextQueueKey;
     _contextQueue = dispatch_queue_create("com.sunsetlakesoftware.GPUImage.openGLESContextQueue", NULL);
     
@@ -43,10 +41,6 @@ static void *openGLESContextQueueKey;
     shaderProgramUsageHistory = [[NSMutableArray alloc] init];
     
     return self;
-}
-
-- (void)appBackground {
-  glFinish();
 }
 
 + (void *)contextKey {

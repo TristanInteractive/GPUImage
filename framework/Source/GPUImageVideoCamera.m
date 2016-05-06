@@ -419,6 +419,13 @@ NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString = SHAD
     }
 }
 
+- (void)finish
+{
+  runSynchronouslyOnVideoProcessingQueue(^{
+    glFinish();
+  });
+}
+
 - (void)pauseCameraCapture;
 {
     capturePaused = YES;

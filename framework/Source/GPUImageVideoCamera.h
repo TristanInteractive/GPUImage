@@ -110,6 +110,8 @@ extern NSString *const kGPUImageYUVVideoRangeConversionForLAFragmentShaderString
  */
 - (void)stopCameraCapture;
 
+- (void)finish;
+
 /** Pause camera capturing
  */
 - (void)pauseCameraCapture;
